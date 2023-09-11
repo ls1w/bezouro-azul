@@ -38,18 +38,28 @@ main{
     display: flex;
 }
 .filme-container{
-    background-color: tomato;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
 .descricao{
-    background-color: lightgreen;
-    flex-grow: 2;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 100px;
 }
+
+.descricao p{
+    width: 535px;
+    font-size: 1.5rem;
+    text-align: justify;
+    color: #fff;
+}
+
 .trailers{
     background-color: lightgoldenrodyellow;
-    flex-grow: 1;
+    height: 130px;
 }
 .social-container{
     background-color: lightblue;
