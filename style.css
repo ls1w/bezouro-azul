@@ -31,10 +31,33 @@ header a{
     font-size: 1.5rem;
 }
 
+
+
 main{
+    flex-grow: 1;
+    display: flex;
+}
+.filme-container{
     background-color: tomato;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
+.descricao{
+    background-color: lightgreen;
+    flex-grow: 2;
+}
+.trailers{
+    background-color: lightgoldenrodyellow;
+    flex-grow: 1;
+}
+.social-container{
+    background-color: lightblue;
+    width: 40px;
+}
+
+
+
 footer{
     background-color: blueviolet;
     height: 50px;
