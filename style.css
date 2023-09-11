@@ -29,6 +29,13 @@ header{
 header a{
     color: #22FFFE;
     font-size: 1.5rem;
+    /* border-bottom: 2px solid transparent; */
+}
+header a:hover{
+    border-bottom: 4px solid #22FFFE;
+}
+header .logo-dc:hover{
+    border-bottom: 4px solid transparent;
 }
 
 
@@ -60,9 +67,13 @@ main{
 
 
 .trailers{
-    height: 138px;
+    height: 130px;
     display: flex;
     gap: 32px;
+    align-items: center;
+}
+.trailers img:hover{
+    border-bottom: 8px solid transparent;
 }
 
 
@@ -79,10 +90,18 @@ main{
     color: #fff;
     text-decoration: #22FFFE;
 }
+.social-container i:hover{
+    color: #22FFFE;
+    border-right: 8px solid transparent;
+}
 
 
 
 footer{
-    background-color: blueviolet;
     height: 50px;
+    color: #fff;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
