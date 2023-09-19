@@ -34,6 +34,9 @@ header a{
 header a:hover{
     border-bottom: 4px solid #22FFFE;
 }
+header i.fa-solid{
+    display: none;
+}
 header .logo-dc:hover{
     border-bottom: 4px solid transparent;
 }
@@ -55,6 +58,9 @@ main{
     flex-direction: column;
     align-items: flex-start;
     padding-top: 100px;
+}
+.descricao button{
+    display: none;
 }
 
 .descricao p{
@@ -106,7 +112,7 @@ footer{
     align-items: center;
 }
 
-
+/* IPAD MINI */
 @media (max-width:768px){
     body{
         padding: 32px 0px 0px 0px;
@@ -140,6 +146,60 @@ footer{
 
 
     footer{
+        display: none;
+    }
+}
+
+/*SMARTPHONE */
+@media (max-width:480px){
+    
+    body{
+        width: 100vw;
+        background-image: url(./img/background-mobile.png);
+        background-size: cover;
+    }
+    header{
+        padding: 0px 24px;
+        justify-content: space-between;
+    }
+    header a{
+        display: none;
+        height: 47px;
+        width: 48px;
+    }
+    header .logo-dc{
+        display: block;
+        border-bottom: none;
+    }
+    header i.fa-solid{
+    display: block;
+    color: #D040FF;
+    font-size: 32px;
+    }
+    .descricao{
+        padding: 0;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 32px;
+        height: 100%;
+        padding-bottom: 30px;
+    }
+    .descricao button{
+        display: block;
+        background-color: #D040FF;
+        border-radius: 50px;
+        width: 200px;
+        height: 50px;
+        border: 2px solid #22FFFE;
+        font-size: 1.2rem;
+    }
+    .descricao img{
+        width: 95vw;
+    }
+    .descricao p{
+        display: none;
+    }
+    .trailers{
         display: none;
     }
 }
